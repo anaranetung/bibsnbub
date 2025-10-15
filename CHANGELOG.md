@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/anaranetung/bibsnbub/compare/v1.0.0...v1.1.0) (2025-10-15)
+
+
+### Features
+
+* Fake feature for version change ([8ee9196](https://github.com/anaranetung/bibsnbub/commit/8ee9196415dd4f04bf3ea799b237ef47d03d94c9))
+
 # 1.0.0 (2025-10-15)
 
 
