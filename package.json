@@ -159,7 +159,7 @@
   },
   "release": {
     "branches": [
-      "main"
+      "main", "test-release"
     ],
     "plugins": [
       [
