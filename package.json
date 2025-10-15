@@ -1,7 +1,7 @@
 {
   "name": "bibsnbub",
   "type": "module",
-  "version": "2.7.1",
+  "version": "1.0.0",
   "author": "Natasha Ann (https://github.com/natashaannn)",
   "engines": {
     "node": ">=20"
@@ -159,7 +159,8 @@
   },
   "release": {
     "branches": [
-      "main", "test-release"
+      "main",
+      "test-release"
     ],
     "plugins": [
       [
