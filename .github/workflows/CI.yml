@@ -1,10 +1,8 @@
 name: CI
 
 on:
-  push:
-    branches: [main,test-release]
-  pull_request:
-    branches: [main,test-release]
+  workflow_dispatch:
+  
 jobs:
   build:
     strategy:
