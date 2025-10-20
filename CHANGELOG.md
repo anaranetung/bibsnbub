@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/anaranetung/bibsnbub/compare/v1.0.0...v1.1.0) (2025-10-20)
+
+
+### Features
+
+* Test release action triggered by PR merge ([#1](https://github.com/anaranetung/bibsnbub/issues/1)) ([f7800d7](https://github.com/anaranetung/bibsnbub/commit/f7800d7ab64a871026e4e5b217c1e7c40cf1fb39))
+
 # 1.0.0 (2025-10-20)
 
 
