@@ -9,6 +9,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read # for checkout
+
 jobs:
   release:
     strategy:
@@ -22,9 +25,9 @@ jobs:
       contents: write # to be able to publish a GitHub release
       issues: write # to be able to comment on released issues
       pull-requests: write # to be able to comment on released pull requests
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: false # set to false so personal token is used instead
@@ -34,7 +37,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: npm
       - run: HUSKY=0 npm ci
-
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.ADMIN_PERSONAL_TOKEN }} # do not use GH_TOKEN as secret name to avoid authentication issues with GitHub API
