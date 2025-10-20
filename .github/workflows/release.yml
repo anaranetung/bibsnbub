@@ -1,7 +1,7 @@
 name: Release
 
 on:
-  workflow_dispatch: # todo remove this
+  workflow_dispatch:
   workflow_run:
     workflows: [CI]
     types:
@@ -41,3 +41,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ADMIN_PERSONAL_CLASSIC_TOKEN }} # do not use GH_TOKEN as secret name to avoid authentication issues with GitHub API
         run: npx semantic-release
+# test commit
