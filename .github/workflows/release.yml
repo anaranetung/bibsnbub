@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read # for checkout
+
 jobs:
   release:
     strategy:
