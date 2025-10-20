@@ -39,5 +39,5 @@ jobs:
       - run: HUSKY=0 npm ci
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.ADMIN_PERSONAL_TOKEN }} # do not use GH_TOKEN as secret name to avoid authentication issues with GitHub API
+          GITHUB_TOKEN: ${{ secrets.ADMIN_PERSONAL_CLASSIC_TOKEN }} # do not use GH_TOKEN as secret name to avoid authentication issues with GitHub API
         run: npx semantic-release
